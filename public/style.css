@@ -13,3 +13,10 @@ aside{width:209px;padding:31px 18px}main{margin-left:209px;padding:0 40px}nav{ga
 .simple-command{padding:18px 20px;cursor:pointer;transition:border-color .15s,background .15s;}
 .simple-command h3{margin:0;font-size:16px;line-height:1.45;}
 .simple-command:hover,.simple-command:focus-visible{border-color:var(--green,#247563);background:#f8fcfa;outline:none;}
+
+/* Comandos e tutoriais: exibir somente o título, sem cartão ou fundo */
+#records:has(.simple-command){grid-template-columns:1fr;gap:12px;}
+#records .simple-command{display:block;min-height:0;width:fit-content;max-width:100%;padding:0;margin:0;background:transparent;border:0;border-radius:0;box-shadow:none;}
+#records .simple-command h3{margin:0;padding:3px 0;font-size:16px;line-height:1.5;color:#21393e;text-decoration:none;}
+#records .simple-command:hover,#records .simple-command:focus-visible{background:transparent;border:0;box-shadow:none;outline:none;}
+#records .simple-command:hover h3,#records .simple-command:focus-visible h3{color:#236d5a;text-decoration:underline;}
