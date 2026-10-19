@@ -3,3 +3,13 @@
 aside{width:209px;padding:31px 18px}main{margin-left:209px;padding:0 40px}nav{gap:8px}nav button{padding:14px 13px;gap:14px}nav button span{white-space:nowrap}.info-panel{min-height:220px}.info-panel p{margin:10px auto;color:#6f8586}.quick-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:20px}.quick-links a{display:inline-block;padding:10px 14px;border:1px solid #dce7e5;border-radius:8px;background:#fff;color:#236d5a;text-decoration:none;font-size:13px}.quick-links a:hover{background:#edf6f2}@media(max-width:1100px){aside{width:195px}main{margin-left:195px;padding:0 25px}}@media(max-width:700px){aside{width:auto}main{margin:0;padding:0 18px}}
 
 .record-card{cursor:pointer;transition:box-shadow .15s,border-color .15s}.record-card:hover{border-color:#9abeb5;box-shadow:0 5px 18px #173b3512}.record-card:focus-visible{outline:3px solid #49b7a2;outline-offset:3px}.detail-type{font-size:11px;letter-spacing:1.5px;color:#538274;font-weight:700}.detail-body{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;color:#425d62;min-height:60px}.detail-meta{font-size:12px;color:#738487;border-top:1px solid #edf1f1;padding-top:14px}
+
+/* Comandos e tutoriais: lista simples com apenas o título clicável */
+.simple-command{padding:18px 20px;cursor:pointer;transition:border-color .15s,background .15s;}
+.simple-command h3{margin:0;font-size:16px;line-height:1.45;}
+.simple-command:hover,.simple-command:focus-visible{border-color:var(--green,#247563);background:#f8fcfa;outline:none;}
+
+/* Comandos e tutoriais: apenas o título, clicável para abrir o conteúdo */
+.simple-command{padding:18px 20px;cursor:pointer;transition:border-color .15s,background .15s;}
+.simple-command h3{margin:0;font-size:16px;line-height:1.45;}
+.simple-command:hover,.simple-command:focus-visible{border-color:var(--green,#247563);background:#f8fcfa;outline:none;}
