@@ -46,3 +46,14 @@ A sintaxe JavaScript foi verificada localmente. Testes reais de autenticação, 
 Fontes técnicas:
 - https://firebase.google.com/docs/web/alt-setup
 - https://firebase.google.com/docs/firestore/security/rules-conditions
+
+## Configuração do Firebase (login e dados compartilhados)
+
+1. Em Firebase Console > Authentication > Método de login, ative **E-mail/senha**.
+2. Em Authentication > Usuários, crie cada conta autorizada.
+3. Para cada usuário, copie o UID exibido em Authentication > Usuários.
+4. Em Firestore Database, crie um documento na coleção `members` com o **ID do documento igual ao UID** desse usuário e o campo `active` do tipo booleano com valor `true`.
+5. Publique as regras de `firestore.rules` no Firestore (ou use Firebase CLI para publicar o arquivo).
+6. `public/config.js` contém a configuração pública do app Web. Não coloque chaves de conta de serviço ou credenciais administrativas nesse arquivo.
+
+As regras atuais restringem leitura e escrita de `records` a usuários autenticados que tenham documento ativo em `members`. A coleção `members` não pode ser alterada pelo site.
