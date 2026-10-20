@@ -1,5 +1,3 @@
-// Configuração do aplicativo Web Firebase do NIIP.
-// Esta configuração identifica o projeto; nunca coloque credenciais administrativas aqui.
 window.NIIP_CONFIG = {
   firebase: {
     apiKey: "AIzaSyAcw4_uSD3tPBEn2P7OuHgmaj9JIfNu7NM",
